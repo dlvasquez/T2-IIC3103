@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['t2-hamburguer.herokuapp.com']
 
-
+APPEND_SLASH = False
 # Application definition
 
 INSTALLED_APPS = [

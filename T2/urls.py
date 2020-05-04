@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import include, url
-
+from django.urls import path
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^hamburguesa/', include('ApiRest.api.hambUrls', namespace='api-hamburguesas')),
-    url(r'^ingrediente/', include('ApiRest.api.ingrUrls', namespace='api-ingredientes'))
+    path('', include(
+        'ApiRest.urls'))
 ]
